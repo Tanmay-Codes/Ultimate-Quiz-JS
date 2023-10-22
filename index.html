@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+    <title>Ultimate Quiz</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="inner">
+          <h1 class="heading">Welcome to Ultimage Trivia Quiz</h1>
+          <h3 class="desc">
+            You will get 10 questions and your score will start from 0. For
+            every correct answer you will get a +1 and for wrong answey -1, Once
+            your score goes below zero you will loose and exit the game before
+            finishing!!!
+          </h3>
+          <button class="btn btn-modal" onclick="startGame()">Start</button>
+        </div>
+      </div>
+    </div>
+    <div id="quizContainer">
+      <div class="scoreCard">
+        <p class="score"></p>
+      </div>
+      <div class="card">
+        <div class="question"></div>
+        <div class="answers">
+          <div class="ans-row">
+            <button class="A btn btn-ans"></button>
+            <button class="B btn btn-ans"></button>
+          </div>
+          <div class="ans-row">
+            <button class="C btn btn-ans"></button>
+            <button class="D btn btn-ans"></button>
+          </div>
+        </div>
+        <button class="E btn">Exit</button>
+      </div>
+    </div>
+  </body>
+</html>
